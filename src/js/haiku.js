@@ -6,7 +6,11 @@ export default class Haiku {
   }
 
   checkLines() {
-
+    if (typeof(this.line1) === 'string' && typeof(this.line2) === 'string' && typeof(this.line3) === 'string') {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }

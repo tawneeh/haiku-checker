@@ -14,9 +14,16 @@ describe( 'Haiku', () => {
     expect(haiku.line3).toEqual("A world of struggle");
   });
 
-  test('should check if an instance of Haiku has three lines', () => {
+  test('should return true if an instance of Haiku has three lines', () => {
     expect(haiku.checkLines()).toBeTruthy();
     expect(haiku.checkLines()).toBeTruthy();
     expect(haiku.checkLines()).toBeTruthy();
+  });
+
+  test('should return false if an instance of Haiku does not have three lines', () => {
+    const falseHaiku = new Haiku(10,11,12);
+    expect(falseHaiku.checkLines()).toBeFalsy();
+    expect(falseHaiku.checkLines()).toBeFalsy();
+    expect(falseHaiku.checkLines()).toBeFalsy();
   });
 });
