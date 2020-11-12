@@ -1,3 +1,5 @@
+import Haiku from './../src/js/haiku.js';
+
 describe( 'Haiku', () => {
 
   test('should correctly create a Haiku object', () => { 
