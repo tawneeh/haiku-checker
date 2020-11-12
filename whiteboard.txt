@@ -1,0 +1,11 @@
+Haiku
+
+Poem with 3 lines
+
+5 - 7 - 5
+syllables
+
+1. should create an instance of Haiku()
+2. should check if instance of Haiku has three lines
+
+Syllable Rules:
